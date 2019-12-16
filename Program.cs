@@ -12,7 +12,7 @@ namespace WriteFibonacciRange
                .WriteTo.File("log.txt").CreateLogger();
 
             var userInterface = new WriteFibonacciUI();
-            var app = new FibonacciRangeApp();
+            var app = new FibonacciRangeApp(userInterface);
             IEnumerable<int> fibonacciRange;
             int from;
             int upTo;
@@ -48,8 +48,10 @@ namespace WriteFibonacciRange
                 from = userInterface.GetUserNumber(TextMessages.FROM);
                 upTo = userInterface.GetUserNumber(TextMessages.UP_TO);
 
-                fibonacciRange = app.GetRange(from, upTo);
-                userInterface.ShowResult(fibonacciRange);
+                //fibonacciRange = app.GetRange(from, upTo);
+                //userInterface.ShowResult(fibonacciRange);
+
+                app.WriteFibonacciNumber(from, upTo);
             }
 
             userInterface.Delay();

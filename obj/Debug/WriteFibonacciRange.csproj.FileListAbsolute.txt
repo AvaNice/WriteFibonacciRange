@@ -1,0 +1,12 @@
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\bin\Debug\WriteFibonacciRange.exe.config
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\bin\Debug\WriteFibonacciRange.exe
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\bin\Debug\WriteFibonacciRange.pdb
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\obj\Debug\WriteFibonacciRange.csprojAssemblyReference.cache
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\obj\Debug\WriteFibonacciRange.exe
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\obj\Debug\WriteFibonacciRange.pdb
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\bin\Debug\Serilog.dll
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\bin\Debug\Serilog.Sinks.File.dll
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\bin\Debug\Serilog.xml
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\bin\Debug\Serilog.Sinks.File.pdb
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\bin\Debug\Serilog.Sinks.File.xml
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\obj\Debug\WriteFibonacciRange.csproj.CopyComplete

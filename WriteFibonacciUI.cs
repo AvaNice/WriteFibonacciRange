@@ -7,12 +7,12 @@ namespace WriteFibonacciRange
 {
     public class WriteFibonacciUI
     {
-        public int GetUserNumber()
+        public int GetUserNumber(string name)
         {
             string input;
             int result;
 
-            Console.Write(TextMessages.ENTER_NUMBER);
+            Console.Write($"{name} = ");
 
             input = Console.ReadLine();
 
@@ -33,7 +33,7 @@ namespace WriteFibonacciRange
                 ShowResult(TextMessages.INCORRECT_INPUT_TO_BIG);
             }
 
-            return GetUserNumber();
+            return GetUserNumber(name);
         }
 
         public void ShowHelp()
@@ -49,6 +49,7 @@ namespace WriteFibonacciRange
         public void ShowResult(IEnumerable<int> result)
         {
             int count = result.Count();
+
             if (count != 0)
             {
                 int buff = 0;

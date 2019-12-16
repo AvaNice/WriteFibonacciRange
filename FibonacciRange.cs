@@ -4,7 +4,7 @@ namespace WriteFibonacciRange
 {
     class FibonacciRange
     {
-        public List<int> GetRange(int from, int upTo)
+        public IEnumerable<int> GetRange(int from, int upTo)
         {
             TwoNumber twoPrevious;
 

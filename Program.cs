@@ -23,6 +23,7 @@ namespace WriteFibonacciRange
                 {
                     from = Convert.ToInt32(args[0]);
                     upTo = Convert.ToInt32(args[1]);
+
                     fibonacciRange = app.GetRange(from, upTo);
                     userInterface.ShowResult(fibonacciRange);
                 }
@@ -44,12 +45,12 @@ namespace WriteFibonacciRange
             }
             else
             {
-                from = userInterface.GetUserNumber();
-                upTo = userInterface.GetUserNumber();
+                from = userInterface.GetUserNumber(TextMessages.FROM);
+                upTo = userInterface.GetUserNumber(TextMessages.UP_TO);
+
                 fibonacciRange = app.GetRange(from, upTo);
                 userInterface.ShowResult(fibonacciRange);
             }
-            
 
             userInterface.Delay();
         }

@@ -1,6 +1,6 @@
 ﻿namespace WriteFibonacciRange
 {
-    static class TextMessages
+    public static class TextMessages
     {
         public const string ENTER_NUMBER = "number = ";
         public const string INCORRECT_INPUT_FORMAT = "use digit";
@@ -10,5 +10,7 @@
         public const string CANT_READ_ARGS = "Can't read args";
         public const string FROM = "From";
         public const string UP_TO = "Up to";
+        public const string SPLITER = ", ";
+        public const string AFTER_LAST = ".";
     }
 }

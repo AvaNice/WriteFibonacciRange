@@ -1,17 +1,17 @@
 ﻿namespace WriteFibonacciRange
 {
-    public class WriteRangeApplication
+    public class WriteFibonacciRangeApplication
     {
         private readonly IRange _range;
-        private readonly IWriteRangeUI _userInterface;
+        private readonly IRangeUserInterface _userInterface;
 
-        public WriteRangeApplication(IWriteRangeUI userInterface, IRange range)
+        public WriteFibonacciRangeApplication(IRangeUserInterface userInterface, IRange range)
         {
             _userInterface = userInterface;
             _range = range;
         }
 
-        public void WriteFibonacciNumbers(int from, int upTo)
+        public void WriteFibonacciRange(int from, int upTo)
         {
             bool isEmpty = true;
             int fibonacciNumber;
@@ -21,17 +21,17 @@
             {
                 for (int index = 0; ; index++)
                 {
-                    fibonacciNumber = _range.GetIteration(index);
-                    nextFibonacciNumber = _range.GetIteration(index + 1);
+                    fibonacciNumber = _range[index];
+                    nextFibonacciNumber = _range[index + 1];
 
-                    if (nextFibonacciNumber > upTo)
+                    if (nextFibonacciNumber >= upTo)
                     {
                         if (fibonacciNumber > from)
                         {
                             isEmpty = false;
 
                             _userInterface
-                            .ShowResult($"{fibonacciNumber}{TextMessages.AFTER_LAST}");
+                                .ShowResult($"{fibonacciNumber}{TextMessages.AFTER_LAST}");
                         }
 
                         break;

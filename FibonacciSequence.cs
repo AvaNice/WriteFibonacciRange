@@ -2,17 +2,28 @@
 
 namespace WriteFibonacciRange
 {
-    public class FibonacciRange : IRange
+    public class FibonacciSequence : IRange
     {
         private const double SQUARE_ROOT_OF_FIVE = 2.2360679775;
+        private const int LAST_INT_FIBONACCI_NUMBER = 47;
 
-        public int GetIteration(int iteration)
+        public int Length { get; } = LAST_INT_FIBONACCI_NUMBER;
+
+        public int this[int index]
         {
-            if(iteration < 0)
+            get 
             {
-                throw new ArgumentException("Iteration can't be negative");
-            }
+                if (index < 0 || index > LAST_INT_FIBONACCI_NUMBER)
+                {
+                    throw new IndexOutOfRangeException();
+                }
 
+                return GetIteration(index); 
+            }
+        }
+
+        private int GetIteration(int iteration)
+        {
             double result;
 
             result = (Math.Pow((1 + SQUARE_ROOT_OF_FIVE) / 2, iteration)

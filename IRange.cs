@@ -2,6 +2,7 @@
 {
     public interface IRange
     {
-        int GetIteration(int iteration);
+        int Length { get; }
+        int this[int index] { get; }
     }
 }

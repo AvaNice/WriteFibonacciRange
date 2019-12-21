@@ -3,7 +3,7 @@ using System;
 
 namespace WriteFibonacciRange
 {
-    public class WriteRangeUI : IWriteRangeUI
+    public class WriteRangeUserInterface : IRangeUserInterface
     {
         public int GetUserNumber(string name)
         {

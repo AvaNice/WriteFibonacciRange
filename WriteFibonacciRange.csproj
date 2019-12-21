@@ -49,14 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FibonacciRange.cs" />
-    <Compile Include="WriteRangeApplication.cs" />
+    <Compile Include="FibonacciSequence.cs" />
+    <Compile Include="WriteFibonacciRangeApplication.cs" />
     <Compile Include="IRange.cs" />
-    <Compile Include="IWriteRangeUI.cs" />
+    <Compile Include="IRangeUserInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TextMessages.cs" />
-    <Compile Include="WriteRangeUI.cs" />
+    <Compile Include="WriteRangeUserInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

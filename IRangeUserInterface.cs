@@ -1,15 +1,11 @@
 ﻿namespace WriteFibonacciRange
 {
-    public interface IWriteRangeUI
+    public interface IRangeUserInterface
     {
-        void Delay();
-
         int GetUserNumber(string name);
-
-        void ShowHelp();
-
         void ShowMessage(string result);
-
         void ShowResult(string result);
+        void Delay();
+        void ShowHelp();
     }
 }

@@ -1,33 +1,39 @@
 ﻿namespace WriteFibonacciRange
 {
-    public class WriteRangeApp
+    public class WriteRangeApplication
     {
-        private readonly IRange _fibonacciRange;
+        private readonly IRange _range;
         private readonly IWriteRangeUI _userInterface;
 
-        public WriteRangeApp(IWriteRangeUI userInterface, IRange fibonacciRange)
+        public WriteRangeApplication(IWriteRangeUI userInterface, IRange range)
         {
             _userInterface = userInterface;
-            _fibonacciRange = fibonacciRange;
+            _range = range;
         }
 
-        public void WriteFibonacciNumber(int from, int upTo)
+        public void WriteFibonacciNumbers(int from, int upTo)
         {
             bool isEmpty = true;
             int fibonacciNumber;
-            int nextFibonacciNUmber;
+            int nextFibonacciNumber;
 
-            if (from != upTo)
+            if (from < upTo)
             {
                 for (int index = 0; ; index++)
                 {
-                    fibonacciNumber = _fibonacciRange.GetIteration(index);
-                    nextFibonacciNUmber = _fibonacciRange.GetIteration(index + 1);
+                    fibonacciNumber = _range.GetIteration(index);
+                    nextFibonacciNumber = _range.GetIteration(index + 1);
 
-                    if (nextFibonacciNUmber > upTo)
+                    if (nextFibonacciNumber > upTo)
                     {
-                        _userInterface
+                        if (fibonacciNumber > from)
+                        {
+                            isEmpty = false;
+
+                            _userInterface
                             .ShowResult($"{fibonacciNumber}{TextMessages.AFTER_LAST}");
+                        }
+
                         break;
                     }
 

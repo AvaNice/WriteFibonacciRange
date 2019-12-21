@@ -10,34 +10,21 @@ namespace WriteFibonacciRange
             Log.Logger = new LoggerConfiguration().MinimumLevel.Debug()
                .WriteTo.File("log.txt").CreateLogger();
 
-            var userInterface = new WriteRangeUI();
-            var range =  new FibonacciRange();
-            var app = new WriteRangeApp(userInterface, range);
+            IWriteRangeUI userInterface = new WriteRangeUI();
+            IRange range =  new FibonacciRange();
+            var app = new WriteRangeApplication(userInterface, range);
             int from;
             int upTo;
 
-            if (args.Length > 1)
+            if (args.Length > 2)
             {
-                try
+                if(int.TryParse(args[0], out from) && int.TryParse(args[1], out upTo))
                 {
-                    from = Convert.ToInt32(args[0]);
-                    upTo = Convert.ToInt32(args[1]);
-
-                    app.WriteFibonacciNumber(from, upTo);
+                    app.WriteFibonacciNumbers(from, upTo);
                 }
-                catch (FormatException ex)
+                else
                 {
-                    Log.Logger.Error($"{ex.Message}");
-                    userInterface.ShowMessage(TextMessages.CANT_READ_ARGS);
-                }
-                catch (OverflowException ex)
-                {
-                    Log.Logger.Error($"{ex.Message}");
-                    userInterface.ShowMessage(TextMessages.CANT_READ_ARGS);
-                }
-                catch (NullReferenceException ex)
-                {
-                    Log.Logger.Error($"{ex.Message}");
+                    Log.Logger.Error($"Can't parse user args{args[0]} {args[1]}");
                     userInterface.ShowMessage(TextMessages.CANT_READ_ARGS);
                 }
             }
@@ -46,7 +33,7 @@ namespace WriteFibonacciRange
                 from = userInterface.GetUserNumber(TextMessages.FROM);
                 upTo = userInterface.GetUserNumber(TextMessages.UP_TO);
 
-                app.WriteFibonacciNumber(from, upTo);
+                app.WriteFibonacciNumbers(from, upTo);
             }
 
             userInterface.Delay();

@@ -8,6 +8,11 @@ namespace WriteFibonacciRange
 
         public int GetIteration(int iteration)
         {
+            if(iteration < 0)
+            {
+                throw new ArgumentException("Iteration can't be negative");
+            }
+
             double result;
 
             result = (Math.Pow((1 + SQUARE_ROOT_OF_FIVE) / 2, iteration)

@@ -12,7 +12,7 @@ namespace WriteFibonacciRangeTests
         [InlineData(3, 2)]
         [InlineData(7, 13)]
         [InlineData(11, 89)]
-        [InlineData(43, 433494437)] 
+        [InlineData(43, 433494437)]
         [InlineData(45, 1134903170)]
         public void IndexatorTestWithCorrectInput(int iteration, int expected)
         {

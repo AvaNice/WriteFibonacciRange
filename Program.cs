@@ -4,6 +4,8 @@ namespace WriteFibonacciRange
 {
     public class Program
     {
+        private const int COUNT_OF_REQUIRED_PARAMETERS = 2;
+
         static void Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration().MinimumLevel.Debug()
@@ -15,7 +17,7 @@ namespace WriteFibonacciRange
             int from;
             int upTo;
 
-            if (args.Length > 2)
+            if (args.Length > COUNT_OF_REQUIRED_PARAMETERS)
             {
                 if(int.TryParse(args[0], out from) && int.TryParse(args[1], out upTo))
                 {

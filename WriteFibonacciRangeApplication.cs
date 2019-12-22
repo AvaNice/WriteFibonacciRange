@@ -51,7 +51,6 @@
             {
                 _userInterface.ShowMessage(TextMessages.EMPTY);
             }
-
         }
     }
 }

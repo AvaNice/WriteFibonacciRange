@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WriteFibonacciRange;
 using Xunit;
 
@@ -33,7 +29,7 @@ namespace WriteFibonacciRangeTests
         [InlineData(-3)]
         [InlineData(-13)]
         [InlineData(-901)]
-        [InlineData(47)]
+        [InlineData(48)]
         [InlineData(70)]
         public void IndexatorThrowExeptionTest(int iteration)
         {

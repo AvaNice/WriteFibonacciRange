@@ -22,3 +22,5 @@ C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\WriteFibonacc
 C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\WriteFibonacciRangeTests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
 C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\WriteFibonacciRangeTests\bin\Debug\xunit.runner.reporters.net452.dll
 C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRange\WriteFibonacciRangeTests\bin\Debug\xunit.runner.utility.net452.dll
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRangeTests\obj\Debug\WriteFibonacciRangeTests.dll
+C:\C# .Net\ElementaryTasks\WriteFibonacciRange\WriteFibonacciRangeTests\obj\Debug\WriteFibonacciRangeTests.pdb

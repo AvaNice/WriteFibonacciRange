@@ -13,7 +13,7 @@ namespace WriteFibonacciRange
 
             IRangeUserInterface userInterface = new WriteRangeUserInterface();
             IRange range =  new FibonacciSequence();
-            var app = new WriteFibonacciRangeApplication(userInterface, range);
+            var application = new WriteFibonacciRangeApplication(userInterface, range);
             int from;
             int upTo;
 
@@ -21,7 +21,7 @@ namespace WriteFibonacciRange
             {
                 if(int.TryParse(args[0], out from) && int.TryParse(args[1], out upTo))
                 {
-                    app.WriteFibonacciRange(from, upTo);
+                    application.WriteFibonacciRange(from, upTo);
                 }
                 else
                 {
@@ -36,11 +36,10 @@ namespace WriteFibonacciRange
                 from = userInterface.GetUserNumber(TextMessages.FROM);
                 upTo = userInterface.GetUserNumber(TextMessages.UP_TO);
 
-                app.WriteFibonacciRange(from, upTo);
+                application.WriteFibonacciRange(from, upTo);
+
+                userInterface.Delay();
             }
-
-            userInterface.Delay();
         }
-
     }
 }

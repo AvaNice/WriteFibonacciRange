@@ -30,7 +30,6 @@ namespace WriteFibonacciRange
                 - Math.Pow((1 - SQUARE_ROOT_OF_FIVE) / 2, iteration))
                 / SQUARE_ROOT_OF_FIVE;
 
-
             if (result > Convert.ToDouble(int.MaxValue))
             {
                 return int.MaxValue;

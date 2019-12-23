@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FibonacciSequence.cs" />
-    <Compile Include="WriteFibonacciRangeApplication.cs" />
+    <Compile Include="WriteRangeApplication.cs" />
     <Compile Include="IRange.cs" />
     <Compile Include="IRangeUserInterface.cs" />
     <Compile Include="Program.cs" />

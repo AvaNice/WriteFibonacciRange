@@ -1,17 +1,17 @@
 ﻿namespace WriteFibonacciRange
 {
-    public class WriteFibonacciRangeApplication
+    public class WriteRangeApplication
     {
         private readonly IRange _range;
         private readonly IRangeUserInterface _userInterface;
 
-        public WriteFibonacciRangeApplication(IRangeUserInterface userInterface, IRange range)
+        public WriteRangeApplication(IRangeUserInterface userInterface, IRange range)
         {
             _userInterface = userInterface;
             _range = range;
         }
 
-        public void WriteFibonacciRange(int from, int upTo)
+        public void WriteRange(int from, int upTo)
         {
             bool isEmpty = true;
             int fibonacciNumber;

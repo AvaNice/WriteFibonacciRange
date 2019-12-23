@@ -60,7 +60,7 @@
     <Compile Include="FibonacciRangeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestUI.cs" />
-    <Compile Include="WriteFibonacciRangeApplicationTests.cs" />
+    <Compile Include="WriteRangeApplicationTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
